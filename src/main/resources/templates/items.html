@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+
+    <div th:insert="blocks/style :: style"></div>
+
+</head>
+
+<body class="d-flex flex-column bg-dark text-white">
+<main>
+    <div class="cover-container d-flex w-100 h-100 p-2 mx-auto flex-column ">
+        <header th:insert="blocks/header :: header"></header>
+    </div>
+
+    <div class="album py-5 text-dark">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col-6 col-xl-4 mt-5 text-dark" th:each="el : ${items}">
+                    <div class="card shadow-sm">
+                        <a th:href="${el.material} +'/' + ${el.getId()}">
+                            <img th:src="'/img/' + ${el.getIndexFilename(0, el.getFilenames())}" width="100%" height="225" role="img"
+                                 class="img-thumbnail">
+                        </a>
+                        <div class="card-body">
+                            <p th:text="${el.getName()}"/>
+                            <p th:utext="${el.getAnons()}" class="text-wrap"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a th:href="${el.material} +'/' + ${el.getId()}" class="btn btn-sm btn-info">Детальнее</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>

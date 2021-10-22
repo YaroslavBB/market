@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+
+    <div th:insert="blocks/style :: style"></div>
+
+</head>
+<body class="d-flex flex-column bg-dark text-white">
+<main>
+    <div class="cover-container d-flex w-100 h-100 p-2 mx-auto flex-column ">
+        <header th:insert="blocks/header :: header"></header>
+    </div>
+
+    <div class="container text-center nav nav-masthead justify-content-center p-2">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-5 col-xl-3 gall-block">
+                <a href="/items/plastics" class="nav-link active">
+                    <img src="https://static.glami.cz/img/239217125.jpg" class="figure">
+                    <h3>Пластиковые чемоданы</h3>
+                </a>
+            </div>
+            <div class="col-6 col-sm-5 col-xl-3 gall-block">
+                <a href="/items/textile" class="nav-link active">
+                    <img src="http://billionnews.ru/uploads/posts/2017-06/1498587168_1.png" class="figure">
+                    <h3>Текстильные чемоданы</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center nav nav-masthead justify-content-center p-2">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-5 col-xl-3 gall-block">
+                <a href="/items/backpacks" class="nav-link active">
+                    <img src="https://images.ru.prom.st/883950030_w640_h640_delovoj-ryukzak-dlya.jpg" class="figure">
+                    <h3>Бизнес рюкзаки</h3>
+                </a>
+            </div>
+            <div class="col-6 col-sm-5 col-xl-3 gall-block">
+                <a href="/items/leather_bags" class="nav-link active">
+                    <img src="https://www.brialdi.ru/upload/resize_cache/iblock/007/760_760_2/0079c8f4fd018d8c2429ed5422472483.jpg"
+                         class="figure">
+                    <h3>Кожаные сумки</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!--Grid row-->
+        <div class="row gy-3">
+
+            <!--Grid column-->
+            <div class="col-4 col-xl-2">
+
+                <!--Image-->
+                <div class="view overlay z-depth-1-half">
+                    <a href="items/plastic/4">
+                        <img src="http://localhost:8080/img/fdaad70b-cb25-4fa5-b081-de99dbf91093.photo_2021-09-04_13-15-06.jpg"
+                             class="img-fluid"
+                             alt="">
+
+                        <div class="mask rgba-white-light"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-4 col-xl-2">
+
+                <!--Image-->
+                <div class="view overlay z-depth-1-half">
+                    <a href="items/textile/2">
+                        <img src="http://localhost:8080/img/8d757089-b263-4667-a1a5-f266d3c8f563.photo_2021-09-06_13-41-22.jpg"
+                             class="img-fluid"
+                             alt="">
+
+                        <div class="mask rgba-white-light"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-4 col-xl-2">
+
+                <!--Image-->
+                <div class="view overlay z-depth-1-half">
+                    <a href="items/plastic/9">
+                        <img src="http://localhost:8080/img/ae91721b-af11-4456-9d39-53e8e1aa9609.photo_2021-09-05_13-38-32.jpg"
+                             class="img-fluid"
+                             alt="">
+
+                        <div class="mask rgba-white-light"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-4 col-xl-2" >
+
+                <!--Image-->
+                <div class="view overlay z-depth-1-half">
+                    <a href="items/plastic/10">
+                        <img src="http://localhost:8080/img/9d494934-9824-43f0-a2ca-3b03651604ba.photo_2021-09-02_17-37-20.jpg"
+                             class="img-fluid"
+                             alt="">
+
+                        <div class="mask rgba-white-light"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-4 col-xl-2">
+
+                <!--Image-->
+                <div class="view overlay z-depth-1-half">
+                    <a href="items/textile/8">
+                        <img src="http://localhost:8080/img/45f03cd7-8d4d-4217-94e4-3ef27d19c172.photo_2021-09-06_13-35-08.jpg"
+                             class="img-fluid"
+                             alt="">
+
+                        <div class="mask rgba-white-light"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-4 col-xl-2">
+
+                <!--Image-->
+                <div class="view overlay z-depth-1-half">
+                    <a href="items/plastic/7">
+                        <img src="http://localhost:8080/img/7012dfae-98b7-4f0a-b7ea-f6389dfac650.photo_2021-09-10_16-18-23.jpg"
+                             class="img-fluid"
+                             alt="">
+
+                        <div class="mask rgba-white-light"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+
+</footer>
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>

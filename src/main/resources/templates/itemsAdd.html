@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" class="h-100">
+
+<head>
+    <title>Добавление товара</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+
+    <div th:insert="blocks/style :: style"></div>
+
+</head>
+
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header th:insert="blocks/header :: header"></header>
+
+    <div class="container mt-5 mb-5">
+        <h4>Добавление товара</h4><br>
+        <form action="/admin/add" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Введите название товара" class="form-control"><br>
+            <textarea name="description" placeholder="Введите описание товара"
+                      class="form-control white-space: pre-line"></textarea><br>
+            <input type="text" name="salaryBig" placeholder="Введите цену big" class="form-control"/><br>
+            <input type="text" name="salaryAverage" placeholder="Введите цену average" class="form-control"/><br>
+            <input type="text" name="salarySmall" placeholder="Введите цену small" class="form-control"/><br>
+            <input type="text" name="material" placeholder="Введите категорию textile or plastic" class="form-control"/><br>
+            <input type="text" name="anons" placeholder="Введите anons" class="form-control"/><br>
+            <input type="file" name="file" placeholder="Добавьте изображение" class="form-control"><br>
+            <input type="file" name="file2" placeholder="Добавьте еще изображение" class="form-control"><br>
+            <input type="file" name="file3" placeholder="Добавьте еще изображение" class="form-control"><br>
+<!--            <input th:type='hidden' th:value='${_csrf.token}' th:name='${_csrf.parameterName}'/>-->
+            <button type="submit" class="btn btn-success">Добавить товар</button>
+        </form>
+
+    </div>
+    <div th:insert="blocks/footer :: footer"></div>
+</div>
+
+
+</body>
+</html>

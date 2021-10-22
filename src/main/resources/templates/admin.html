@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru" class="h-100">
+
+<head>
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+
+    <div th:insert="blocks/style :: style"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="d-flex flex-column bg-dark text-white">
+
+<main class>
+    <div class="cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
+        <header th:insert="blocks/header :: header"></header>
+    </div>
+
+    <ul class="nav nav-pills flex-column text-center p-5 m-5 h5">
+        <li class="nav-item col-12 col-lg-4">
+            <a class="nav-link active" href="/admin/add">Добавить чемодан</a>
+        </li><br>
+        <li class="nav-item col-12 col-lg-4">
+            <a class="nav-link active" href="/admin/add_back">Добавить сумку/рюкзак</a>
+        </li><br>
+<!--        <li class="nav-item col-3">-->
+<!--            <a class="nav-link active" href="/admin/edit/textile/">Изменить текстильный чемодан</a>-->
+<!--        </li><br>-->
+<!--        <li class="nav-item col-3">-->
+<!--            <a class="nav-link active" href="#">Изменить рюкзак</a>-->
+<!--        </li>-->
+    </ul>
+</main>
+</body>
+</html>
